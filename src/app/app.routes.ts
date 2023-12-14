@@ -12,7 +12,7 @@ export const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'properties', component: PropertiesComponent },
