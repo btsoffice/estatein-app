@@ -1,0 +1,44 @@
+:host .callToAction {
+  position: relative;
+  z-index: 1;
+  background: #141414;
+  padding: 100px 0;
+}
+:host .callToAction::before, :host .callToAction::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  background: url("../../../../assets/design/abstract-design-2.svg") no-repeat center;
+  background-size: cover;
+  width: 600px;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+:host .callToAction::before {
+  left: 0;
+}
+:host .callToAction::after {
+  right: 0;
+  transform: scale(-1, 1);
+}
+:host .callToAction .calltoActionInner {
+  display: flex;
+  justify-content: space-between;
+}
+:host .callToAction .calltoActionInner .callToActionText {
+  width: 992px;
+}
+:host .callToAction .calltoActionInner .callToActionText h3,
+:host .callToAction .calltoActionInner .callToActionText p {
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+}
+:host .callToAction .calltoActionInner .callToActionText h3 {
+  font-size: 48px;
+  margin-bottom: 14px;
+}
+:host .callToAction .calltoActionInner .callToActionText p {
+  font-size: 18px;
+}/*# sourceMappingURL=cta.component.css.map */

@@ -1,0 +1,30 @@
+@use '../../../../scss/colors';
+
+:host {
+  button {
+    &.purpleBg {
+      background-color: colors.$p60;
+      border-color: colors.$p60;
+    }
+
+    &.active, &.contactButton {
+      background-color: colors.$g8;
+      border-color: colors.$g15;
+    }
+    &.borderButton{
+      border: 1px solid colors.$g15;
+    }
+    &:hover {
+      border-color: colors.$p60;
+    }
+
+    background-color: transparent;
+    padding: 14px 34px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: .3s;
+  }
+}

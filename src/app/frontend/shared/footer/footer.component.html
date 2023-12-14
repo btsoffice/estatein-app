@@ -1,0 +1,80 @@
+<app-cta></app-cta>
+<footer>
+  <div class="footerSection width-90">
+    <div class="footerNewsletter">
+      <div class="logo">
+        <img width="48px" height="48px" src="../../../assets/img/logo.svg" alt="Footer logo"> <span>Estatein</span>
+      </div>
+      <div class="newsLetterForm">
+        <form>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="email-icon"><i class="bi bi-envelope-plus"></i></span>
+            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email"
+              aria-describedby="Email" id="email">
+            <button class="btn btn-primary" type="button" id="button-addon2"><i class="bi bi-send"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footerNav">
+      <h3>Home</h3>
+      <ul>
+        <li><a routerLink="/home" fragment="heroSection">Hero Section</a></li>
+        <li><a routerLink="/home" fragment="features">Features</a></li>
+        <li><a routerLink="/home" fragment="properties">Properties</a></li>
+        <li><a routerLink="/home" fragment="testimonials">Testimonials</a></li>
+        <li><a routerLink="/home" fragment="faq">FAQ's</a></li>
+      </ul>
+    </div>
+    <div class="footerNav">
+      <h3>About Us</h3>
+      <ul>
+        <li><a routerLink="/about" fragment="ourStory">Our Story</a></li>
+        <li><a routerLink="/about" fragment="ourWork">Our Work</a></li>
+        <li><a routerLink="/about" fragment="howItWorks">How It Works</a></li>
+        <li><a routerLink="/about" fragment="ourTeam">Our Team</a></li>
+        <li><a routerLink="/about" fragment="ourClients">Our Clients</a></li>
+      </ul>
+    </div>
+    <div class="footerNav">
+      <h3>Properties</h3>
+      <ul>
+        <li><a routerLink="/properties" fragment="portfolio">Portfolio</a></li>
+        <li><a routerLink="/properties" fragment="categories">Categories</a></li>
+      </ul>
+    </div>
+    <div class="footerNav">
+      <h3>Services</h3>
+      <ul>
+        <li><a routerLink="/services" fragment="valuationMastery">Valuation Mastery</a></li>
+        <li><a routerLink="/services" fragment="strategicMarketing">Strategic Marketing</a></li>
+        <li><a routerLink="/services" fragment="negotitationWizardry">Negotiation Wizardry</a></li>
+        <li><a routerLink="/services" fragment="closingSuccess">Closing Success</a></li>
+        <li><a routerLink="/services" fragment="propertyManagement">Property Management</a></li>
+      </ul>
+    </div>
+    <div class="footerNav">
+      <h3>Contact</h3>
+      <ul>
+        <li><a routerLink="/contact" fragment="contactForm">Contact Form</a></li>
+        <li><a routerLink="/contact" fragment="ourOffices">Our Offices</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyRightSection">
+    <div class="copyRight">
+      <div class="copyRightText">
+        <span>&copy; 2023 Estatein. All Rights Resrved</span>
+        <a [routerLink]="['/terms']" routerLinkActive="active">Terms &amp; Conditions</a>
+      </div>
+      <div class="socialLinks">
+        <ul>
+          <li><a href="#"><i class="bi bi-meta"></i></a></li>
+          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+          <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,25 @@
+:host .sectionHeader {
+  position: relative;
+}
+:host .sectionHeader::before {
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  content: "";
+  background: url("../../../../assets/design/sectionHeader.svg") center center no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 41px;
+}
+:host .sectionHeader h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+:host .sectionHeader p {
+  margin-top: 14px;
+  margin-bottom: 0;
+  color: #999999;
+}/*# sourceMappingURL=section-headers.component.css.map */

@@ -1,0 +1,60 @@
+@defer(on viewport; on timer(500ms)){
+<div class="featuredProperties">
+  <div class="shContainer width-90">
+    <app-section-headers [sectionHeader]="sectionHeader"></app-section-headers>
+    <app-button [buttonText]="'View All Properties'" [buttonLink]="'/properties'"
+      [className]="['borderButton']"></app-button>
+  </div>
+  <div class="fpContainer width-90">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="fpBox">
+          <div class="image"></div>
+          <div class="text">
+            <h3>Featured Property</h3>
+            <p>A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...</p>
+          </div>
+          <div class="info"></div>
+          <div class="details">
+            <div class="price"></div>
+            <app-button [buttonText]="'View Property Details'" [buttonLink]="'/properties'"
+              [className]="['purpleBg']"></app-button>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="fpBox">
+          <div class="image"></div>
+          <div class="text">
+            <h3>Featured Property</h3>
+            <p>A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...</p>
+          </div>
+          <div class="info"></div>
+          <div class="details">
+            <div class="price"></div>
+            <app-button [buttonText]="'View Property Details'" [buttonLink]="'/properties'"
+              [className]="['purpleBg']"></app-button>
+          </div>
+          </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="fpBox">
+          <div class="image"></div>
+          <div class="text">
+            <h3>Featured Property</h3>
+            <p>A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...</p>
+          </div>
+          <div class="info"></div>
+          <div class="details">
+            <div class="price"></div>
+            <app-button [buttonText]="'View Property Details'" [buttonLink]="'/properties'"
+              [className]="['purpleBg']"></app-button>
+          </div>
+          </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>
+} @placeholder{
+  <h3>Loading</h3>
+}

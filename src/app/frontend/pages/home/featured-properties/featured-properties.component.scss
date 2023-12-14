@@ -1,0 +1,33 @@
+@use '../../../../../scss/colors';
+
+:host {
+  .featuredProperties {
+    background: colors.$g8;
+    padding: 100px 0;
+
+    .shContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 200px;
+      align-items: center;
+
+      app-section-headers {
+        width: calc(80% - 100px);
+      }
+
+      app-button {
+        width: calc(20% - 100px);
+      }
+    }
+
+    .fpContainer {
+      .fpBox {
+        border: 1px solid #202020;
+        border-radius: 12px;
+        padding: 40px;
+        margin: 15px;
+      }
+    }
+  }
+}

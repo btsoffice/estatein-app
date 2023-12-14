@@ -1,0 +1,35 @@
+@use 'scss/colors';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.img-100 img{
+  max-width: 100%;
+  height: auto;
+}
+a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.width-90{
+  width: 90%;
+  margin: 0 auto;
+}
+::selection {
+	color: #ffffff;
+	background-color: colors.$p60;
+}
+/* Scrollbar */
+::-webkit-scrollbar {width: 10px; background-color: colors.$g50;}
+::-webkit-scrollbar-track {box-shadow: colors.$g8;}
+::-webkit-scrollbar-thumb {background: colors.$g8; border: 1px solid colors.$g20;}
+::-webkit-scrollbar-thumb:hover {border-color: colors.$g30; background: colors.$g20;}

@@ -1,0 +1,28 @@
+:host .pageNotFound {
+  height: 100dvh;
+  background: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:host .pageNotFound .notFoundBox {
+  background: #1a1a1a;
+  padding: 100px 150px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  text-align: center;
+  color: #ffffff;
+}
+:host .pageNotFound .notFoundBox h3 {
+  margin: 0;
+  font-size: 100px;
+  line-height: 1;
+  font-weight: 700;
+}
+:host .pageNotFound .notFoundBox p {
+  margin: 20px 0;
+}
+:host .pageNotFound .notFoundBox button {
+  background-color: #141414;
+  border-color: #262626;
+}/*# sourceMappingURL=pagenotfound.component.css.map */

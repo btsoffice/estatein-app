@@ -1,0 +1,100 @@
+@use '../../../../scss/colors';
+:host {
+  .headerTop {
+    &.hidden{
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      padding: 0;
+    }
+    transition: .3s;
+    position: relative;
+    background-color: colors.$g8;
+    padding: 18px 0;
+    text-align: center;
+    z-index: 1;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: url('../../../../assets/design/abstract-design-1.svg') center center no-repeat;
+      background-size: cover;
+      display: block;
+      opacity: .3;
+      z-index: -1;
+    }
+
+    span {
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 500;
+
+      a {
+        text-decoration: underline;
+        color: #ffffff;
+      }
+    }
+    .x-button{
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      color: #ffffff;
+      transform: translate(0, -50%);
+      background: rgba($color: colors.$g40, $alpha: .3);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+
+  header {
+    background: colors.$g10;
+    padding: 20px 0;
+
+    .estateinNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+        }
+
+        img {
+          width: 48px;
+        }
+
+        span {
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 1;
+        }
+      }
+
+      .menuButtons {
+        display: flex;
+        gap: 16px;
+      }
+
+      .contactButton {
+        button {
+          padding: 24px 16px;
+        }
+      }
+    }
+
+  }
+}

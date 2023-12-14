@@ -1,0 +1,126 @@
+:host footer {
+  border-top: 2px solid #262626;
+  background: #141414;
+}
+:host footer .footerSection {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+:host footer .footerSection .footerNewsletter {
+  width: calc(25% - 12.5px);
+  padding-right: 45px;
+}
+:host footer .footerSection .footerNewsletter .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+:host footer .footerSection .footerNewsletter .logo img {
+  width: 48px;
+}
+:host footer .footerSection .footerNewsletter .logo span {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+}
+:host footer .footerSection .footerNewsletter .newsLetterForm form .input-group-text {
+  padding: 18px 0 18px 24px;
+  border-color: #999999;
+  background: transparent;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  border-right: none;
+}
+:host footer .footerSection .footerNewsletter .newsLetterForm form .input-group-text i {
+  color: #999999;
+  font-size: 24px;
+}
+:host footer .footerSection .footerNewsletter .newsLetterForm form input {
+  background: transparent;
+  color: #ffffff;
+  border-left: none;
+  border-right: none;
+  border-color: #999999;
+  padding: 18px 0 18px 10px;
+}
+:host footer .footerSection .footerNewsletter .newsLetterForm form input::placeholder {
+  color: #999999;
+}
+:host footer .footerSection .footerNewsletter .newsLetterForm form input:focus {
+  box-shadow: none;
+}
+:host footer .footerSection .footerNewsletter .newsLetterForm form button {
+  padding: 18px 24px 18px 10px;
+  background: transparent;
+  border-color: #999999;
+  border-left: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-size: 24px;
+}
+:host footer .footerSection .footerNav {
+  width: calc(15% - 12.5px);
+  padding: 0 30px;
+}
+:host footer .footerSection .footerNav h3 {
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 30px;
+  color: #999999;
+  font-size: 20px;
+}
+:host footer .footerSection .footerNav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+}
+:host footer .footerSection .footerNav ul li a {
+  display: block;
+  color: #ffffff;
+}
+:host footer .copyRightSection {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+}
+:host footer .copyRightSection .copyRight {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+:host footer .copyRightSection .copyRight span {
+  color: #ffffff;
+  margin-right: 38px;
+}
+:host footer .copyRightSection .copyRight a {
+  color: #ffffff;
+}
+:host footer .copyRightSection .socialLinks ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+}
+:host footer .copyRightSection .socialLinks ul li a {
+  border: 1px solid transparent;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  display: inline-block;
+  background-color: #141414;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 24px;
+}
+:host footer .copyRightSection .socialLinks ul li a:hover {
+  border-color: #703BF7;
+}/*# sourceMappingURL=footer.component.css.map */

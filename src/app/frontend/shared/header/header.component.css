@@ -1,0 +1,83 @@
+:host .headerTop {
+  transition: 0.3s;
+  position: relative;
+  background-color: #141414;
+  padding: 18px 0;
+  text-align: center;
+  z-index: 1;
+}
+:host .headerTop.hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+}
+:host .headerTop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../../../../assets/design/abstract-design-1.svg") center center no-repeat;
+  background-size: cover;
+  display: block;
+  opacity: 0.3;
+  z-index: -1;
+}
+:host .headerTop span {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+}
+:host .headerTop span a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+:host .headerTop .x-button {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  color: #ffffff;
+  transform: translate(0, -50%);
+  background: rgba(102, 102, 102, 0.3);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+}
+:host header {
+  background: #1a1a1a;
+  padding: 20px 0;
+}
+:host header .estateinNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+:host header .estateinNav .logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+:host header .estateinNav .logo img {
+  width: 48px;
+}
+:host header .estateinNav .logo span {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+}
+:host header .estateinNav .menuButtons {
+  display: flex;
+  gap: 16px;
+}
+:host header .estateinNav .contactButton button {
+  padding: 24px 16px;
+}/*# sourceMappingURL=header.component.css.map */

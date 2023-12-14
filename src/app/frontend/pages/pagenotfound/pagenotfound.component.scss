@@ -1,0 +1,36 @@
+@use '../../../../scss/colors';
+
+:host {
+  .pageNotFound {
+    height: 100dvh;
+    background: colors.$g8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .notFoundBox {
+      background: colors.$g10;
+      padding: 100px 150px;
+      border-radius: 10px;
+      border: 1px solid colors.$g15;
+      text-align: center;
+      color: #ffffff;
+
+      h3 {
+        margin: 0;
+        font-size: 100px;
+        line-height: 1;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 20px 0;
+      }
+
+      button {
+        background-color: colors.$g8;
+        border-color: colors.$g15;
+      }
+    }
+  }
+}

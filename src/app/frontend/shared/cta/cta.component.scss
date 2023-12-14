@@ -1,0 +1,52 @@
+@use '../../../../scss/colors';
+
+:host {
+  .callToAction {
+    position: relative;
+    z-index: 1;
+    background: colors.$g8;
+    padding: 100px 0;
+    &::before, &::after{
+      position: absolute;
+      bottom: 0;
+      content: '';
+      background: url('../../../../assets/design/abstract-design-2.svg') no-repeat center;
+      background-size: cover;
+      width: 600px;
+      height: 100%;
+      z-index: -1;
+      opacity: .4;
+    }
+    &::before{
+      left: 0;
+    }
+    &::after{
+      right: 0;
+      transform: scale(-1, 1);
+    }
+    .calltoActionInner {
+      display: flex;
+      justify-content: space-between;
+
+      .callToActionText {
+        width: 992px;
+
+        h3,
+        p {
+          color: #ffffff;
+          line-height: 1.5;
+          margin: 0;
+        }
+
+        h3 {
+          font-size: 48px;
+          margin-bottom: 14px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
