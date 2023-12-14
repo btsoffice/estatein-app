@@ -20,12 +20,15 @@ export class FeaturedPropertiesComponent {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
+    margin: 30,
+    lazyLoad: true,
+    center: true,
     touchDrag: true,
-    pullDrag: true,
-    dots: true,
     autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     navSpeed: 300,
-    navText: ['', ''],
+    navText: ['<i class="bi bi-arrow-left-circle"></i>', '<i class="bi bi-arrow-right-circle"></i>'],
     responsive: {
       0: {
         items: 1,
@@ -37,7 +40,7 @@ export class FeaturedPropertiesComponent {
         items: 3,
       },
       940: {
-        items: 4,
+        items: 3,
       },
     },
     nav: true,
