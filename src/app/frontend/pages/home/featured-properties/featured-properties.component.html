@@ -9,14 +9,25 @@
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide>
         <div class="fpBox">
-          <div class="image"></div>
+          <div class="image">
+            <img src="../../../../../assets/img/SeasideSerenityVilla.webp" alt="Property Image">
+          </div>
           <div class="text">
-            <h3>Featured Property</h3>
+            <h3>Seaside Serenity Villa</h3>
             <p>A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...</p>
           </div>
-          <div class="info"></div>
+          <div class="info">
+            <ul>
+              <li><i class="bi bi-segmented-nav"></i> 2-Bedrooms</li>
+              <li><i class="bi bi-basket3-fill"></i> 4-Bathrooms</li>
+              <li><i class="bi bi-building"></i> Vila</li>
+            </ul>
+          </div>
           <div class="details">
-            <div class="price"></div>
+            <div class="price">
+              <p>Price</p>
+              <span>$550,000</span>
+            </div>
             <app-button [buttonText]="'View Property Details'" [buttonLink]="'/properties'"
               [className]="['purpleBg']"></app-button>
           </div>
@@ -24,33 +35,55 @@
       </ng-template>
       <ng-template carouselSlide>
         <div class="fpBox">
-          <div class="image"></div>
+          <div class="image">
+            <img src="../../../../../assets/img/MetropolitanHaven.webp" alt="Property Image">
+          </div>
           <div class="text">
-            <h3>Featured Property</h3>
+            <h3>Metropolitan Haven</h3>
             <p>A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...</p>
           </div>
-          <div class="info"></div>
+          <div class="info">
+            <ul>
+              <li><i class="bi bi-segmented-nav"></i> 2-Bedrooms</li>
+              <li><i class="bi bi-basket3-fill"></i> 4-Bathrooms</li>
+              <li><i class="bi bi-building"></i> Vila</li>
+            </ul>
+          </div>
           <div class="details">
-            <div class="price"></div>
+            <div class="price">
+              <p>Price</p>
+              <span>$550,000</span>
+            </div>
             <app-button [buttonText]="'View Property Details'" [buttonLink]="'/properties'"
               [className]="['purpleBg']"></app-button>
           </div>
-          </div>
+        </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="fpBox">
-          <div class="image"></div>
+          <div class="image">
+            <img src="../../../../../assets/img/RusticRetreatCottage.webp" alt="Property Image">
+          </div>
           <div class="text">
-            <h3>Featured Property</h3>
+            <h3>Rustic Retreat Cottage</h3>
             <p>A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...</p>
           </div>
-          <div class="info"></div>
+          <div class="info">
+            <ul>
+              <li><i class="bi bi-segmented-nav"></i> 2-Bedrooms</li>
+              <li><i class="bi bi-basket3-fill"></i> 4-Bathrooms</li>
+              <li><i class="bi bi-building"></i> Vila</li>
+            </ul>
+          </div>
           <div class="details">
-            <div class="price"></div>
+            <div class="price">
+              <p>Price</p>
+              <span>$550,000</span>
+            </div>
             <app-button [buttonText]="'View Property Details'" [buttonLink]="'/properties'"
               [className]="['purpleBg']"></app-button>
           </div>
-          </div>
+        </div>
       </ng-template>
     </owl-carousel-o>
   </div>

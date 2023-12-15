@@ -15,9 +15,15 @@
 :host .featuredProperties .shContainer app-button {
   width: calc(20% - 100px);
 }
+:host .featuredProperties .fpContainer {
+  margin-top: 80px;
+}
 :host .featuredProperties .fpContainer .fpBox {
   border: 1px solid #202020;
   border-radius: 12px;
   padding: 40px;
-  margin: 15px;
+}
+:host .featuredProperties .fpContainer .fpBox .image {
+  border-radius: 12px;
+  overflow: hidden;
 }/*# sourceMappingURL=featured-properties.component.css.map */

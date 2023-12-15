@@ -24,6 +24,20 @@ a {
   width: 90%;
   margin: 0 auto;
 }
+.featuredProperties .owl-theme .owl-nav{
+  display: block;
+  text-align: right;
+}
+.featuredProperties .owl-theme .owl-nav [class*=owl-]{
+  background: transparent;
+  color: colors.$g60;
+  font-size: 30px;
+  padding: 0;
+  transition: .3s;
+}
+.featuredProperties .owl-theme .owl-nav [class*=owl-]:hover{
+  color: #ffffff;
+}
 ::selection {
 	color: #ffffff;
 	background-color: colors.$p60;

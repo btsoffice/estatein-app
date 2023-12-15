@@ -22,10 +22,74 @@
     }
 
     .fpContainer {
+      margin-top: 80px;
+
       .fpBox {
         border: 1px solid #202020;
         border-radius: 12px;
         padding: 40px;
+
+        .image {
+          border-radius: 12px;
+          overflow: hidden;
+        }
+
+        .text {
+          margin-top: 30px;
+
+          h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #ffffff;
+          }
+
+          p {
+            color: colors.$g60;
+            margin: 0;
+            font-weight: 500;
+          }
+        }
+
+        .info {
+          margin: 30px 0;
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            li{
+              flex: 1;
+              border-radius: 28px;
+              padding: 8px 14px;
+              color: #ffffff;
+              border: 1px solid colors.$g15;
+              background: colors.$g10;
+              text-align: center;
+              font-size: 16px;
+            }
+          }
+        }
+        .details{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .price{
+            p{
+              margin: 0;
+              font-weight: 500;
+              color: colors.$g60;
+            }
+            span{
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 1.5;
+              color: #ffffff;
+            }
+          }
+        }
       }
     }
   }
