@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "estatin-app": {
+    "estatein-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/estatin-app",
+            "outputPath": "dist/estatein-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "estatin-app:build:production"
+              "buildTarget": "estatein-app:build:production"
             },
             "development": {
-              "buildTarget": "estatin-app:build:development"
+              "buildTarget": "estatein-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "estatin-app:build"
+            "buildTarget": "estatein-app:build"
           }
         },
         "test": {
@@ -121,28 +121,28 @@
         "nightwatch-run": {
           "builder": "@nightwatch/schematics:nightwatch",
           "options": {
-            "devServerTarget": "estatin-app:serve",
+            "devServerTarget": "estatein-app:serve",
             "tsConfig": "../nightwatch/tsconfig.e2e.json",
             "config": "./nightwatch.conf.js",
             "env": "chrome"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "estatin-app:serve:production"
+              "devServerTarget": "estatein-app:serve:production"
             }
           }
         },
         "e2e": {
           "builder": "@nightwatch/schematics:nightwatch",
           "options": {
-            "devServerTarget": "estatin-app:serve",
+            "devServerTarget": "estatein-app:serve",
             "tsConfig": "../nightwatch/tsconfig.e2e.json",
             "config": "./nightwatch.conf.js",
             "env": "chrome"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "estatin-app:serve:production"
+              "devServerTarget": "estatein-app:serve:production"
             }
           }
         }
