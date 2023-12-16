@@ -13,7 +13,6 @@ export const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: '', component: HomeComponent },
-      { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'properties', component: PropertiesComponent },
       { path: 'services', component: ServicesComponent },
