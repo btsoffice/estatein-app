@@ -6,9 +6,11 @@
     flex-wrap: wrap;
     position: relative;
     background: colors.$g8;
+    width: 100%;
+    padding-left: 5%;
 
     .heroSectionText {
-      flex-basis: 45%;
+      flex: 300px;
       padding: 100px 60px 100px 0;
       margin-left: auto;
 
@@ -68,7 +70,7 @@
     .heroSectionImage {
       position: relative;
       z-index: 1;
-      flex-basis: 50%;
+      flex: 300px;
       overflow: hidden;
       background: linear-gradient(238deg, #2A213F 8.76%, rgba(25, 25, 25, 0.00) 50.09%), colors.$g10;
       background-size: cover;

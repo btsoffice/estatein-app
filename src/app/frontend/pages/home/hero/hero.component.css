@@ -3,9 +3,11 @@
   flex-wrap: wrap;
   position: relative;
   background: #141414;
+  width: 100%;
+  padding-left: 5%;
 }
 :host .heroSection .heroSectionText {
-  flex-basis: 45%;
+  flex: 300px;
   padding: 100px 60px 100px 0;
   margin-left: auto;
 }
@@ -56,7 +58,7 @@
 :host .heroSection .heroSectionImage {
   position: relative;
   z-index: 1;
-  flex-basis: 50%;
+  flex: 300px;
   overflow: hidden;
   background: linear-gradient(238deg, #2A213F 8.76%, rgba(25, 25, 25, 0) 50.09%), #1a1a1a;
   background-size: cover;
