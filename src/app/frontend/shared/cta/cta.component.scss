@@ -4,7 +4,6 @@
   .callToAction {
     position: relative;
     z-index: 1;
-    background: colors.$g8;
     padding: 100px 0;
     &::before, &::after{
       position: absolute;

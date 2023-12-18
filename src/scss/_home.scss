@@ -1,0 +1,10 @@
+.shContainer {
+  &.shButton {
+    justify-content: space-between;
+    gap: 200px;
+    align-items: center;
+    app-section-headers {
+      width: calc(80% - 100px);
+    }
+  }
+}

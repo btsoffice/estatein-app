@@ -1,19 +1,14 @@
-:host .featuredProperties {
-  background: #141414;
-  padding: 100px 0;
-}
-:host .featuredProperties .shContainer {
-  display: flex;
-  flex-wrap: wrap;
+.shContainer.shButton {
   justify-content: space-between;
   gap: 200px;
   align-items: center;
 }
-:host .featuredProperties .shContainer app-section-headers {
+.shContainer.shButton app-section-headers {
   width: calc(80% - 100px);
 }
-:host .featuredProperties .shContainer app-button {
-  width: calc(20% - 100px);
+
+:host .featuredProperties {
+  padding: 100px 0;
 }
 :host .featuredProperties .fpContainer {
   margin-top: 80px;

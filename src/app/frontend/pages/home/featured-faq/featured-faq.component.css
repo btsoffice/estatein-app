@@ -1,0 +1,8 @@
+.shContainer.shButton {
+  justify-content: space-between;
+  gap: 200px;
+  align-items: center;
+}
+.shContainer.shButton app-section-headers {
+  width: calc(80% - 100px);
+}/*# sourceMappingURL=featured-faq.component.css.map */

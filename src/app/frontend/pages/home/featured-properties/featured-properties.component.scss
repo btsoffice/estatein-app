@@ -1,25 +1,8 @@
 @use '../../../../../scss/colors';
-
+@use '../../../../../scss/home';
 :host {
   .featuredProperties {
-    background: colors.$g8;
     padding: 100px 0;
-
-    .shContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 200px;
-      align-items: center;
-
-      app-section-headers {
-        width: calc(80% - 100px);
-      }
-
-      app-button {
-        width: calc(20% - 100px);
-      }
-    }
 
     .fpContainer {
       margin-top: 80px;
@@ -54,13 +37,15 @@
 
         .info {
           margin: 30px 0;
+
           ul {
             margin: 0;
             padding: 0;
             list-style: none;
             display: flex;
             gap: 10px;
-            li{
+
+            li {
               flex: 1;
               border-radius: 28px;
               padding: 14px 8px;
@@ -71,17 +56,20 @@
             }
           }
         }
-        .details{
+
+        .details {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          .price{
-            p{
+
+          .price {
+            p {
               margin: 0;
               font-weight: 500;
               color: colors.$g60;
             }
-            span{
+
+            span {
               font-weight: 600;
               font-size: 24px;
               line-height: 1.5;

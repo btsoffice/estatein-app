@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
 import { SectionHeadersComponent } from '../../../shared/section-headers/section-headers.component';
+import { RouterModule } from '@angular/router';
 import { ButtonComponent } from '../../../shared/button-sm/button-sm.component';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+
 @Component({
-  selector: 'app-featured-properties',
+  selector: 'app-featured-testimonials',
   standalone: true,
-  imports: [SectionHeadersComponent, ButtonComponent, CarouselModule],
-  templateUrl: './featured-properties.component.html',
-  styleUrl: './featured-properties.component.scss',
+  imports: [RouterModule, SectionHeadersComponent, ButtonComponent, CarouselModule],
+  templateUrl: './featured-testimonials.component.html',
+  styleUrl: './featured-testimonials.component.scss',
 })
-export class FeaturedPropertiesComponent {
-  title: string = 'Featured Properties';
+export class FeaturedTestimonialsComponent {
+  title: string = 'What Our Clients Say';
   description: string =
-    'Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Property Details" for more information.';
+    'Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.';
+
   sectionHeader = {
     sectionTitle: this.title,
     sectionDescription: this.description,
@@ -24,7 +27,7 @@ export class FeaturedPropertiesComponent {
     lazyLoad: true,
     center: true,
     touchDrag: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     navSpeed: 300,

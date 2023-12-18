@@ -1,6 +1,5 @@
 :host footer {
   border-top: 2px solid #262626;
-  background: #141414;
 }
 :host footer .footerSection {
   padding: 100px 0;
@@ -46,9 +45,6 @@
   border-right: none;
   border-color: #999999;
   padding: 18px 0 18px 10px;
-}
-:host footer .footerSection .footerNewsletter .newsLetterForm form input::-moz-placeholder {
-  color: #999999;
 }
 :host footer .footerSection .footerNewsletter .newsLetterForm form input::placeholder {
   color: #999999;

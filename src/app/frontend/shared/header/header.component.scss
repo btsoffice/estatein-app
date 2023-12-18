@@ -1,18 +1,17 @@
 @use '../../../../scss/colors';
 :host {
   .headerTop {
+    transition: .3s;
+    position: relative;
+    padding: 18px 0;
+    text-align: center;
+    z-index: 1;
     &.hidden{
       opacity: 0;
       visibility: hidden;
       height: 0;
       padding: 0;
     }
-    transition: .3s;
-    position: relative;
-    background-color: colors.$g8;
-    padding: 18px 0;
-    text-align: center;
-    z-index: 1;
     &::before {
       content: '';
       position: absolute;

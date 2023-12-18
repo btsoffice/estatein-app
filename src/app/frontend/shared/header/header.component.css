@@ -1,7 +1,6 @@
 :host .headerTop {
   transition: 0.3s;
   position: relative;
-  background-color: #141414;
   padding: 18px 0;
   text-align: center;
   z-index: 1;

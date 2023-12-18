@@ -1,7 +1,6 @@
 :host .callToAction {
   position: relative;
   z-index: 1;
-  background: #141414;
   padding: 100px 0;
 }
 :host .callToAction::before, :host .callToAction::after {

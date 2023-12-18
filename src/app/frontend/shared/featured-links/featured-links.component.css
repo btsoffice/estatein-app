@@ -1,6 +1,3 @@
-:host .features {
-  background: #141414;
-}
 :host .features .featuresContainer {
   padding: 20px;
   display: flex;

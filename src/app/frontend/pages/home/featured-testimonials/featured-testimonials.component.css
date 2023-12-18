@@ -1,0 +1,65 @@
+.shContainer.shButton {
+  justify-content: space-between;
+  gap: 200px;
+  align-items: center;
+}
+.shContainer.shButton app-section-headers {
+  width: calc(80% - 100px);
+}
+
+:host .featuredTestimonials .ftstContainer {
+  padding: 100px 0;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox {
+  padding: 50px;
+  border: 1px solid #262626;
+  border-radius: 12px;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox ul {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox ul li {
+  color: #ffe500;
+  padding: 10px;
+  line-height: 1;
+  border: 1px solid #262626;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox .tstContent {
+  margin-bottom: 40px;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox .tstContent h3 {
+  color: #ffffff;
+  margin-bottom: 14px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox .tstContent p {
+  color: #999999;
+  margin: 0;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox .tstUser {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox .tstUser img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox .tstUser .tstUserInfo h3 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+}
+:host .featuredTestimonials .ftstContainer .ftstBox .tstUser .tstUserInfo p {
+  color: #999999;
+  margin: 0;
+}/*# sourceMappingURL=featured-testimonials.component.css.map */

@@ -1,0 +1,80 @@
+@defer(){
+<div class="featuredTestimonials">
+  <div class="shContainer shButton width-90">
+    <app-section-headers [sectionHeader]="sectionHeader"></app-section-headers>
+    <app-button [buttonText]="'View All Testimonials'" [buttonLink]="'/testimonials'"
+      [className]="['borderButton']"></app-button>
+  </div>
+  <div class="ftstContainer width-90">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="ftstBox">
+          <ul>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+          </ul>
+          <div class="tstContent">
+            <h3>Exceptional Service!</h3>
+            <p>Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding
+              our dream home a breeze. Highly recommended!</p>
+          </div>
+          <div class="tstUser">
+            <img src="../../../../../assets/img/WadeWarren.webp" alt="User Image" width="60" height="60">
+            <div class="tstUserInfo">
+              <h3>Wade Warren</h3>
+              <p>USA, California</p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="ftstBox">
+          <ul>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+          </ul>
+          <div class="tstContent">
+            <h3>Efficient and Reliable</h3>
+            <p>Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results. </p>
+          </div>
+          <div class="tstUser">
+            <img src="../../../../../assets/img/Emelie.webp" alt="User Image" width="60" height="60">
+            <div class="tstUserInfo">
+              <h3>Emelie</h3>
+              <p>USA, Florida</p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="ftstBox">
+          <ul>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+            <li><i class="bi bi-star-fill"></i></li>
+          </ul>
+          <div class="tstContent">
+            <h3>Trusted Advisors</h3>
+            <p>The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!</p>
+          </div>
+          <div class="tstUser">
+            <img src="../../../../../assets/img/JohnMans.webp" alt="User Image" width="60" height="60" >
+            <div class="tstUserInfo">
+              <h3>John Mans</h3>
+              <p>USA, Nevada</p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>
+}
