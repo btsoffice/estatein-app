@@ -21,6 +21,7 @@ export class FeaturedPropertiesComponent {
     loop: true,
     mouseDrag: true,
     margin: 30,
+    dots: false,
     lazyLoad: true,
     center: true,
     touchDrag: true,

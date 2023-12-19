@@ -7,7 +7,12 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-featured-testimonials',
   standalone: true,
-  imports: [RouterModule, SectionHeadersComponent, ButtonComponent, CarouselModule],
+  imports: [
+    RouterModule,
+    SectionHeadersComponent,
+    ButtonComponent,
+    CarouselModule,
+  ],
   templateUrl: './featured-testimonials.component.html',
   styleUrl: './featured-testimonials.component.scss',
 })
@@ -27,6 +32,7 @@ export class FeaturedTestimonialsComponent {
     lazyLoad: true,
     center: true,
     touchDrag: true,
+    dots: false,
     autoplay: false,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FeaturedLinksComponent } from './featured-links.component';
+import { ActivatedRoute, convertToParamMap } from '@angular/router';
 
 describe('FeaturedLinksComponent', () => {
   let component: FeaturedLinksComponent;
@@ -8,10 +9,20 @@ describe('FeaturedLinksComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FeaturedLinksComponent]
+      imports: [FeaturedLinksComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: {
+              paramMap: convertToParamMap({})
+            }
+          }
+        }
+      ]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(FeaturedLinksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

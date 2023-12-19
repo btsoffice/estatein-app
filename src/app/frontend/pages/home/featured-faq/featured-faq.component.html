@@ -1,10 +1,40 @@
+@defer{
 <div class="featuredFaq">
   <div class="shContainer shButton width-90">
     <app-section-headers [sectionHeader]="sectionHeader"></app-section-headers>
-    <app-button [buttonText]="'View All FAQ'" [buttonLink]="'/faq'"
-      [className]="['borderButton']"></app-button>
+    <app-button [buttonText]="'View All FAQ'" [buttonLink]="'/faq'" [className]="['borderButton']"></app-button>
   </div>
   <div class="faqContainer width-90">
-
+    <owl-carousel-o [options]='customOptions'>
+      <ng-template carouselSlide>
+        <div class="faqBox">
+          <h3>How can I contact an Estatein agent?</h3>
+          <p>Discover the different ways you can get in touch with our experienced agents.</p>
+          <app-button [buttonText]="'Read More'" [buttonLink]="'/faq'" [className]="['borderButton']"></app-button>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="faqBox">
+          <h3>How do I search for properties on Estatein?</h3>
+          <p>Learn how to use our user-friendly search tools to find properties that match your criteria.</p>
+          <app-button [buttonText]="'Read More'" [buttonLink]="'/faq'" [className]="['borderButton']"></app-button>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="faqBox">
+          <h3>What documents do I need to sell my property through Estatein?</h3>
+          <p>Find out about the necessary documentation for listing your property with us.</p>
+          <app-button [buttonText]="'Read More'" [buttonLink]="'/faq'" [className]="['borderButton']"></app-button>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="faqBox">
+          <h3>How can I contact an Estatein agent?</h3>
+          <p>Discover the different ways you can get in touch with our experienced agents.</p>
+          <app-button [buttonText]="'Read More'" [buttonLink]="'/faq'" [className]="['borderButton']"></app-button>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
   </div>
 </div>
+}

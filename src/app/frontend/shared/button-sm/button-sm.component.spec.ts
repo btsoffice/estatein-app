@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ButtonComponent } from './button-sm.component';
+import { ActivatedRoute, convertToParamMap } from '@angular/router';
 
 describe('ButtonSmComponent', () => {
   let component: ButtonComponent;
@@ -8,7 +9,17 @@ describe('ButtonSmComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ButtonComponent]
+      imports: [ButtonComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: {
+              paramMap: convertToParamMap({})
+            }
+          }
+        }
+      ]
     })
     .compileComponents();
 
