@@ -12,7 +12,7 @@
   margin-left: auto;
 }
 :host .heroSection .heroSectionText .textBox {
-  width: 670px;
+  width: 760px;
   color: #ffffff;
 }
 :host .heroSection .heroSectionText .textBox h1 {
@@ -45,7 +45,7 @@
   color: #ffffff;
   background-color: #1a1a1a;
 }
-:host .heroSection .heroSectionText .heroStats .statsText h3 {
+:host .heroSection .heroSectionText .heroStats .statsText h2 {
   font-size: 40px;
   margin: 0;
   font-weight: 700;

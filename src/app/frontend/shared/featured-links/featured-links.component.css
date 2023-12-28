@@ -15,10 +15,11 @@
   border-radius: 12px;
   position: relative;
 }
-:host .features .featuresContainer .featuresBox p {
+:host .features .featuresContainer .featuresBox h2 {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
+  line-height: 1.5;
 }
 :host .features .featuresContainer .featuresBox a {
   position: absolute;
