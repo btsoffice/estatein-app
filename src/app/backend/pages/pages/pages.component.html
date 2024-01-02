@@ -1,0 +1,15 @@
+@defer () {
+    @for(page of pageData; track page.title){
+        <tr>
+            <td>{{page.title}}</td>
+            <td>{{page.author}}</td>
+            <td>{{page.status}}</td>
+            <td>{{page.visibility}}</td>
+            <td><img src="{{baseUrl}}/{{page.featured_image}}" width="50" height="50"></td>
+        </tr>
+    } @empty{
+        <h3>No page found</h3>
+    }
+} @loading {
+    <div class="loading">Loading...</div>
+}
