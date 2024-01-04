@@ -1,15 +1,32 @@
 @defer () {
-    @for(page of pageData; track page.title){
-        <tr>
-            <td>{{page.title}}</td>
-            <td>{{page.author}}</td>
-            <td>{{page.status}}</td>
-            <td>{{page.visibility}}</td>
-            <td><img src="{{baseUrl}}/{{page.featured_image}}" width="50" height="50"></td>
-        </tr>
-    } @empty{
-        <h3>No page found</h3>
-    }
+<div class="card">
+    <p-table [value]="pageData" styleClass="p-datatable-gridlines p-datatable-striped"
+        [tableStyle]="{'min-width': '50rem'}" [paginator]="true" [rows]="1" [showCurrentPageReport]="true"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" (onPage)="pageChange($event)"
+        [rowsPerPageOptions]="[10, 25, 50]">
+        <ng-template pTemplate="caption">
+            <h3>Pages</h3>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="title">Title <p-sortIcon field="title"></p-sortIcon></th>
+                <th pSortableColumn="author">Author <p-sortIcon field="author"></p-sortIcon></th>
+                <th pSortableColumn="status">Status <p-sortIcon field="status"></p-sortIcon></th>
+                <th pSortableColumn="visibility">Visibility <p-sortIcon field="visibility"></p-sortIcon></th>
+                <th>Featured Image</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-page>
+            <tr>
+                <td>{{page.title}}</td>
+                <td>{{page.author}}</td>
+                <td>{{page.status}}</td>
+                <td>{{page.visibility}}</td>
+                <td><p-avatar image="{{baseUrl}}/{{page.featured_image}}" styleClass="mr-2" size="xlarge"></p-avatar>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
 } @loading {
-    <div class="loading">Loading...</div>
+<div class="loading">Loading...</div>
 }

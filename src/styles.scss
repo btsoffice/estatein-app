@@ -1,6 +1,7 @@
 @use 'scss/colors';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import "primeicons/primeicons.css";
 
 html,
 body {
@@ -90,4 +91,60 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   border-color: colors.$g30;
   background: colors.$g20;
+}
+
+.p-panelmenu {
+  .p-panelmenu-header {
+    .p-panelmenu-header-content {
+      background: colors.$g8;
+      border-color: colors.$g15;
+
+      a {
+        color: colors.$g60;
+
+        svg {
+          path {
+            fill: colors.$p60;
+          }
+        }
+      }
+    }
+  }
+
+  .p-panelmenu-content {
+    background-color: colors.$g15;
+    border-color: colors.$g20;
+
+    .p-menuitem {
+      &:not(.p-highlight):not(.p-disabled) {
+        &.p-focus {
+          .p-menuitem-content {
+            background-color: colors.$g20;
+          }
+        }
+      }
+    }
+
+    .p-menuitem-content {
+      &:hover {
+        background-color: colors.$g20;
+      }
+    }
+
+    a {
+      svg {
+        path {
+          fill: colors.$p60;
+        }
+      }
+
+      .p-menuitem-text {
+        color: colors.$g90;
+      }
+
+      .p-menuitem-icon {
+        color: colors.$p60;
+      }
+    }
+  }
 }
