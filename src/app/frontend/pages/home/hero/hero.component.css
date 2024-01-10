@@ -1,87 +1,109 @@
-:host .heroSection {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  background: #141414;
-  width: 100%;
-  padding-left: 5%;
+@layer large, desktop, tablet, mobile;
+@layer large {
+  :host .heroSection {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background: #141414;
+    width: 100%;
+    padding-left: 5%;
+  }
+  :host .heroSection .heroSectionText {
+    flex: 300px;
+    padding: 100px 60px 100px 0;
+    margin-left: auto;
+  }
+  :host .heroSection .heroSectionText .textBox {
+    width: 760px;
+    color: #ffffff;
+  }
+  :host .heroSection .heroSectionText .textBox h1 {
+    font-size: 68px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0;
+  }
+  :host .heroSection .heroSectionText .textBox p {
+    margin-top: 24px;
+    margin-bottom: 60px;
+  }
+  :host .heroSection .heroSectionText .textBox app-button {
+    margin-right: 20px;
+  }
+  :host .heroSection .heroSectionText .textBox app-button:last-child {
+    margin-right: 0;
+  }
+  :host .heroSection .heroSectionText .heroStats {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  :host .heroSection .heroSectionText .heroStats .statsText {
+    flex-basis: calc(33.33% - 13.4px);
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 16px 24px;
+    color: #ffffff;
+    background-color: #1a1a1a;
+  }
+  :host .heroSection .heroSectionText .heroStats .statsText h2 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  :host .heroSection .heroSectionText .heroStats .statsText p {
+    color: #999999;
+    margin: 0;
+  }
+  :host .heroSection .heroSectionImage {
+    position: relative;
+    z-index: 1;
+    flex: 300px;
+    overflow: hidden;
+    background: linear-gradient(238deg, #2A213F 8.76%, rgba(25, 25, 25, 0) 50.09%), #1a1a1a;
+    background-size: cover;
+  }
+  :host .heroSection .heroSectionImage .heroImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../../../../assets/img/heroImage.webp") center bottom no-repeat;
+    background-size: cover;
+  }
+  :host .heroSection .heroSectionImage::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../../../../assets/design/heroDesign.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
-:host .heroSection .heroSectionText {
-  flex: 300px;
-  padding: 100px 60px 100px 0;
-  margin-left: auto;
-}
-:host .heroSection .heroSectionText .textBox {
-  width: 760px;
-  color: #ffffff;
-}
-:host .heroSection .heroSectionText .textBox h1 {
-  font-size: 68px;
-  line-height: 1.2;
-  font-weight: 600;
-  margin: 0;
-}
-:host .heroSection .heroSectionText .textBox p {
-  margin-top: 24px;
-  margin-bottom: 60px;
-}
-:host .heroSection .heroSectionText .textBox app-button {
-  margin-right: 20px;
-}
-:host .heroSection .heroSectionText .textBox app-button:last-child {
-  margin-right: 0;
-}
-:host .heroSection .heroSectionText .heroStats {
-  margin-top: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-:host .heroSection .heroSectionText .heroStats .statsText {
-  flex-basis: calc(33.33% - 13.4px);
-  border: 1px solid #262626;
-  border-radius: 12px;
-  padding: 16px 24px;
-  color: #ffffff;
-  background-color: #1a1a1a;
-}
-:host .heroSection .heroSectionText .heroStats .statsText h2 {
-  font-size: 40px;
-  margin: 0;
-  font-weight: 700;
-  line-height: 1.5;
-}
-:host .heroSection .heroSectionText .heroStats .statsText p {
-  color: #999999;
-  margin: 0;
-}
-:host .heroSection .heroSectionImage {
-  position: relative;
-  z-index: 1;
-  flex: 300px;
-  overflow: hidden;
-  background: linear-gradient(238deg, #2A213F 8.76%, rgba(25, 25, 25, 0) 50.09%), #1a1a1a;
-  background-size: cover;
-}
-:host .heroSection .heroSectionImage .heroImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../../../../../assets/img/heroImage.webp") center bottom no-repeat;
-  background-size: cover;
-}
-:host .heroSection .heroSectionImage::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../../../../../assets/design/heroDesign.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@layer desktop {
+  @media screen and (max-width: 1920px) {
+    :host .textBox {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    :host .heroSection .heroSectionText .textBox h1 {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    :host .heroSection .heroSectionText .heroStats .statsText {
+      padding: 12px 15px;
+    }
+    :host .heroSection .heroSectionText .heroStats .statsText p {
+      line-height: 1.2;
+    }
+  }
 }/*# sourceMappingURL=hero.component.css.map */

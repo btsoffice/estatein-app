@@ -1,24 +1,35 @@
-:host button {
-  background-color: transparent;
-  padding: 14px 34px;
-  color: #ffffff;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  border: 1px solid transparent;
-  transition: 0.3s;
+@layer large, desktop, tablet, mobile;
+@layer large {
+  :host button {
+    background-color: transparent;
+    padding: 14px 34px;
+    color: #ffffff;
+    border-radius: 10px !important;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: 0.3s;
+  }
+  :host button.purpleBg {
+    background-color: #703BF7;
+    border-color: #703BF7;
+  }
+  :host button.active, :host button.contactButton {
+    background-color: #141414;
+    border-color: #262626;
+  }
+  :host button.borderButton {
+    border: 1px solid #262626;
+  }
+  :host button:hover {
+    border-color: #703BF7;
+  }
 }
-:host button.purpleBg {
-  background-color: #703BF7;
-  border-color: #703BF7;
-}
-:host button.active, :host button.contactButton {
-  background-color: #141414;
-  border-color: #262626;
-}
-:host button.borderButton {
-  border: 1px solid #262626;
-}
-:host button:hover {
-  border-color: #703BF7;
+@layer desktop {
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    :host button {
+      padding: 10px 24px;
+      font-size: 14px !important;
+    }
+  }
 }/*# sourceMappingURL=button-sm.component.css.map */
