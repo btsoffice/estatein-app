@@ -6,28 +6,8 @@ import { ContactComponent } from './frontend/pages/contact/contact.component';
 import { PropertiesComponent } from './frontend/pages/properties/properties.component';
 import { ServicesComponent } from './frontend/pages/services/services.component';
 import { LayoutComponent } from './frontend/layout/layout.component';
-import { DashboardComponent } from './backend/dashboard/dashboard.component';
-import { AdminHomeComponent } from './backend/pages/admin-home/admin-home.component';
-import { AdminAboutComponent } from './backend/pages/admin-about/admin-about.component';
-import { LoginComponent } from './backend/login/login.component';
-import { PagesComponent } from './backend/pages/pages/pages.component';
 
 export const routes: Routes = [
-  /**
- * Admin Routes
- */
-  {path: 'admin', redirectTo: 'login', pathMatch: 'full'},
-  {
-    path: 'admin',
-    component: DashboardComponent,
-    children: [
-      { path: 'home', component: AdminHomeComponent },
-      { path: 'about', component: AdminAboutComponent },
-      { path: 'pages', component: PagesComponent },
-      {path: '', redirectTo: 'login', pathMatch: 'full'},
-    ]
-  },
-  {path: 'login', component: LoginComponent},
   {
     /**
      * Front End Routes
